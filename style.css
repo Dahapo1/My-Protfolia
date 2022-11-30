@@ -1,0 +1,549 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+/*Section Header Start*/
+body{
+    background-image: url(/images/pexels-scott-webb-3255761.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+header{
+    position: fixed;
+    left: 0;
+    right: 0;
+    padding: 2rem 9%;
+    align-items: center;
+    justify-content: space-between;
+    text-align: center;
+    display: flex;
+}
+header .head {
+    font-size: 4rem;
+    color: crimson;
+    animation:  movedown 1s linear 1;
+    animation-delay: 2s;
+    animation-fill-mode: forwards;
+    visibility: hidden;
+}
+a{
+    text-decoration: none;
+}
+@keyframes movedown{
+    0%{
+        transform: translateY(-100px);
+        visibility: visible;
+    }
+    100%{
+        transform: translateY(0);
+        visibility: visible;
+    }
+}
+header .navbar{
+    width: 70rem;
+    margin-right: 10rem;
+    animation:  movedown 1s linear 1;
+    animation-delay: 3s;
+    animation-fill-mode: forwards;
+    visibility: hidden;
+}
+header .navbar a{
+    text-decoration: none;
+    font-size: 1.7rem;
+    color: black;
+    padding: .5rem;
+}
+#menu-bar{
+    border: .2rem solid grey;
+    padding: .5rem .5rem;
+    border-radius: .3rem;
+    color: black;
+    font-size: 1.4rem;
+    display: none;
+    cursor: pointer;
+}
+/*Section Header End*/
+
+
+/* Section Home Start */
+section{
+    padding: 3rem 9%;
+}
+.home{
+    display: flex;
+    flex-wrap: wrap;
+    min-height: 100vh;
+    gap:2rem;
+    text-align: center;
+    justify-content: center;
+}
+.home .content{
+    flex: 25rem;
+    animation:  moveright 1s linear 1;
+    animation-delay: 4s;
+    animation-fill-mode: forwards;
+    visibility: hidden;
+}
+@keyframes moveright{
+    0%{
+        transform: translateX(-100px);
+        visibility: visible;
+    }
+    100%{
+        transform: translateX(0);
+        visibility: visible;
+    }
+}
+.home .content h3{
+    margin-top: 7rem;
+    font-size: 3rem;
+    padding: 1rem;
+    color: crimson;
+}
+.home .content p{
+    font-size: 1.3rem;
+}
+.home a{
+    background-color: crimson;
+    border: none;
+    border-radius: .2rem;
+    padding: 1rem;
+    color:white;
+    font-size: 1.3rem;
+    display: inline-block;
+    text-decoration: none;
+    margin-top: 1rem;
+}
+.home .ima{
+    border-radius: 10%;
+    border: 2rem solid gray;
+    height: 28rem;
+    width: 25rem;
+    margin-top: 9rem;
+    animation:  zoomin 1s linear 1;
+    animation-delay: 3s;
+    animation-fill-mode: forwards;
+    visibility: hidden;
+}
+.home .ima img{
+    margin-top: -14.2rem;
+    animation:  zoomin 1s linear 1;
+    animation-delay: 4s;
+    animation-fill-mode: forwards;
+    visibility: hidden;
+}
+@keyframes zoomin{
+    0%{
+        transform: translateY(-100px);
+        visibility: visible;
+    }
+    100%{
+        transform: translateY(0);
+        visibility: visible;
+    }
+}
+.form {
+    visibility: hidden;
+}
+.form{
+    position: absolute;
+    left: 20rem;
+    top: 24rem;
+    padding: 20px 30px;
+    background-color: antiquewhite;
+    box-shadow: 1px 0px 2px 1px black;
+    border-radius: .2rem;
+    border: none;
+    width: 380px;
+    gap: 1rem;
+}
+.form .close-btn{
+    text-align: center;
+    background-color: grey;
+    border-radius: 5rem;
+    width: 2rem;
+    height: 2rem;
+    font-size: 2rem;
+    cursor: pointer;
+    color: white;
+    position: absolute;
+}
+.form h1{
+    text-align: center;
+    margin-bottom: 1rem;
+    align-items: center;
+}
+.form-element{
+    position: relative;
+    margin-bottom: 10px;
+    padding-bottom:5px;
+}
+.form .form-element label{
+    margin-bottom: .5rem;
+    font-size: 1.4rem;
+    display: block;
+    text-align: left;
+}
+.form .form-element input{
+    width: 100%;
+    padding: .5rem;
+    border-radius: .2rem;
+    border: .2rem solid grey;
+}
+.form-element.success input{
+    border: 2px solid green;
+}
+.form-element.error input{
+    border: 2px solid red;
+}
+.form-element small{
+    color: red;
+    margin-left: -15rem;
+    visibility: hidden;
+}
+.form .form-element .bx-x{
+    font-size: 1.4rem;
+    position: absolute;
+    top: 40px;
+    right: 10px;
+    color: red;
+    text-align: right;
+    visibility: hidden;
+}
+.form .form-element .bx-check{
+    font-size: 1.4rem;
+    position: absolute;
+    top: 40px;
+    right: 10px;
+    color: green;
+    text-align: right;
+    visibility: hidden;
+}
+.btn{
+    background-color: crimson;
+    border-radius: .3rem;
+    color: wheat;
+    font-size: 1.4rem;
+    display: inline-block;
+    padding: .5rem;
+    width: 100%;
+    border: none;
+    margin-top: .5rem;
+    cursor: pointer;
+}
+/*Section Home End*/
+
+/*Section About Start*/
+section{
+    padding: 2rem 9%;
+}
+.about .box-container{
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1.5rem;
+    align-items: center;
+    justify-content: center;
+}
+.heading{
+    text-align: center;
+    font-size: 3rem;
+    color: crimson;
+    margin-top: 5rem;
+    margin-bottom: 2rem;
+}
+.about .image{
+    flex: 25rem;
+    text-align: center;
+}
+
+.about .image img{
+    object-fit: cover;
+    width: 20rem;
+    height: 20rem;
+    border-radius: 50%;
+    border: .8rem solid crimson;
+}
+
+.about .content h4{
+    font-size: 2rem;
+    padding: 1rem;
+    text-align: center;
+}
+.about .content p{
+    font-size: 1.2rem;
+}
+/*Section About End*/
+
+/*Section Skills Start*/
+
+section{
+    padding: 3rem 9%;
+}
+.skills .box-container{
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1.5rem;
+    background-color: grey;
+    box-shadow: 1px 0 2px 0px black;
+
+}
+.skills .box-container .box{
+    padding: 3rem;
+    flex: 10rem;
+}
+.skills .box-container .box:hover{
+    border-radius: .3rem;
+    background-color: rgb(0, 0, 0);
+}
+.skills .content{
+    text-align: center;
+}
+.skills .content .bx{
+    color: crimson;
+    font-size: 3rem;
+}
+.skills .content h2{
+    font-size: 1.8rem;
+    color: crimson;
+    padding: .5rem;
+}
+.skills .content p{
+    font-size: 1.2rem;
+    color: white;
+}
+.skills .content i.bxs-star{
+    color: orange;
+    font-size: 1.8rem;
+}
+.skills .content i.bx-star{
+    color: orange;
+    font-size: 1.8rem;
+}
+/*Section Skills End*/
+
+/*Section Project Start*/
+
+section{
+    padding: 2rem 9%;
+}
+.project .box-container{
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1rem;
+    background-color: rgb(249, 248, 246);
+    box-shadow: 1px 0 2px 1px black;
+    justify-content: center;
+    text-align: center;
+}
+.project .content h5{
+    font-size: 1.2rem;
+    color: black;
+    padding: .5rem;
+    letter-spacing: .2rem;
+}
+.project .content a{
+    color: crimson;
+    padding: .8rem;
+}
+.project .content .images{
+    padding-top: 3rem;
+}
+.project .content img{
+    width: 12rem;
+    height: 12rem;
+    object-fit: cover;
+    transition: all 500ms ease-in-out;
+}
+.project .content img:hover{
+    transform: scale(1.2);
+}
+i.bx.bxs-right-arrow-alt{
+    font-size: 1.8rem;
+    margin-bottom: 4rem;
+}
+
+/*Section Project End*/
+
+
+/*Section Contact Start*/
+
+section{
+    padding: 2rem 9%;
+}
+.contact .box-container{
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1.5rem;
+    justify-content: center;
+    text-align: center;
+}
+.contact .box-container .box .bx{
+    color: crimson;
+    font-size: 1.4rem;
+    padding: .5rem;
+    margin-top: 3rem;
+}
+.contact .box h5 {
+    font-size: 1.3rem;
+    padding: .4rem;
+}
+.contact .box p{
+    font-size: 1rem;
+}
+.contact .he{
+    font-size: 2rem;
+    color: crimson;
+    padding: .7rem;
+    text-align: center;
+    background-color:  white ;
+    border-bottom-right-radius: 8rem;
+    border-top-left-radius: 8rem;
+}
+.contact .he p{
+    font-size: 1.2rem;
+    color: black;
+    padding: .3rem;
+}
+.contact .he .ratting{
+    margin-top: .5rem;
+    font-size: 1.5rem;
+    color: orange;
+}
+.bt{
+    background-color: none;
+    border: .2rem solid crimson;
+    padding: .5rem;
+    font-size: 1.3rem;
+    color: black;
+    text-decoration: none;
+    display: inline-block;
+    margin-top: .4rem;
+}
+.creadit{
+    align-items: center;
+    justify-content: center;
+    font-size: 1.4rem;
+    color: white;
+    text-align: center;
+    margin-top: 2rem;
+    padding-top: 1rem;
+    border-top: .1rem solid black;
+}
+.creadit span{
+    color: #333;
+}
+/*Section Contact End*/
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/*media Qouries*/
+@media(max-width:991px){
+    }
+    .skills .content i.bxs-star{
+        font-size: 1.5rem;
+    }
+    .skills .content i.bx-star{
+        font-size: 1.5rem;
+    }
+    .skills .content h2{
+        font-size: 1.1rem;
+    }
+    .skills .content p{
+        font-size: 1rem;
+    }
+    header{
+        font-size: 1rem;
+    }
+    header .head{
+        font-size: 2rem;
+    }
+@media(max-width:768px){
+    #menu-bar{
+        display: initial;
+        margin-right: 2rem;
+    }
+    header .navbar{
+        background-color: aliceblue;
+        width: 100%;
+        position: absolute;
+        top: 100%;
+        left: 0;
+        right: 0;
+        clip-path: polygon(0 0 ,100% 0, 100% 0, 0 0);
+        transition: .2s linear;
+    }
+    header .navbar.active{
+        clip-path: polygon(0 0 ,100% 0, 100% 100%, 0% 100%);
+    }
+    header .navbar a{
+        display: block;
+        padding: .6rem;
+    }
+    .form{
+        top: 38rem;
+        left: 11rem;
+    }
+    header .head{
+        font-size: 3rem;
+    }
+    .content span{
+        font-size: 1.9rem;
+    }
+    .heading{
+        font-size: 2rem;
+    }
+    .about .box-container{
+        text-align: center;
+    }
+    .contact .he{
+        font-size: 1rem;
+    }
+    .contact .he p{
+        font-size: 1rem;
+    }
+    .bt{
+        font-size: 1rem;
+    }
+    .home .content{
+        margin-top: 13rem;
+    } 
+}
+@media(max-width:460px){
+    header{
+        font-size: 1rem;
+    }
+    .home .content{
+        margin-top: 13rem;
+    } 
+    .form{
+        top: 40rem;
+        left: 2rem;
+    }
+ 
+}
